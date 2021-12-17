@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Cili's bakery | Handmade chimney cake</title>
     <meta name="description" content="Cili's bakery is your go-to place for best chimney cakes in Aarhus.">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/mystyle.css">
     <!--Font-->
     <link href="http://fonts.cdnfonts.com/css/hanken" rel="stylesheet">
     <!--Mapbox-->
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>\
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 
 <body>
     <header class="navbar">
         <div class="topnav">
             <div class="navframe">
-                <a href="#aboutme" class="navleft"><h3>About me</h3></a>
-                <a href="#product" class="navleft"><h3>Product</h3></a>
+                <a href="#aboutme" class="navleft">
+                    <h3>About me</h3>
+                </a>
+                <a href="#product" class="navleft">
+                    <h3>Product</h3>
+                </a>
                 <a href="index.html" class="navcenter"><img class="logo" src="media/logo.png" alt="logo"></a>
-                <a href="#contact" class="navright"><h3>Contact</h3></a>
-                <a href="#findus" class="navright"><h3>Find us</h3></a>
+                <a href="#contact" class="navright">
+                    <h3>Contact</h3>
+                </a>
+                <a href="#findus" class="navright">
+                    <h3>Find us</h3>
+                </a>
                 <!--Menu icon-->
                 <label for="menu_icon" class="icon_container" onclick="iconTransform(this);openNav();">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </label>
                 <input type="checkbox" id="menu_icon" class="menu_icon">
             </div>
         </div>
         <div id="mobile" class="mobilenav">
-                <br><a href="#aboutme"><h3>ABOUT ME</h3></a>
-                <a href="#product"><h3>PRODUCT</h3></a>
-                <a href="#map"><h3>FIND US</h3></a>
-                <a href="#contact"><h3>CONTACT</h3></a>
+            <br><a href="#aboutme">
+                <h3>ABOUT ME</h3>
+            </a>
+            <a href="#product">
+                <h3>PRODUCT</h3>
+            </a>
+            <a href="#map">
+                <h3>FIND US</h3>
+            </a>
+            <a href="#contact">
+                <h3>CONTACT</h3>
+            </a>
         </div>
     </header>
-    
+
     <!-- MAIN -->
     <main id="home">
         <!-- TOP IMAGE -->
@@ -55,32 +69,44 @@
                 <h2>in AARHUS</h2><br>
             </div>
         </section>
-        
+
         <div class="new-main">
             <!-- FIRST IMG+TEXT SECTION -->
             <div class="links" id="aboutme"></div>
             <section class="pic-txt left-section" id="aboutme">
-                <img src="traditional1.jpg" class="main_img" alt="messy table with baking material">
+                <img src="media/traditional1.jpg" class="main_img" alt="messy table with baking material">
                 <div class="info-box">
                     <h3>Cili's Bakery</h3><br>
-                    <p>Meet Cili's owner, <strong>Murányi Flóra</strong>! Murányi bakes delicious pastry with ease and a smile on her face. Her passion for baking stems from her Hungarian roots. She particularly likes following old recipes and making traditional pastry from her homeland.</p>
+                    <p>Meet Cili's owner, <strong>Murányi Flóra</strong>! Murányi bakes delicious pastry with ease and a
+                        smile on her face. Her passion for baking stems from her Hungarian roots. She particularly likes
+                        following old recipes and making traditional pastry from her homeland.</p>
                 </div>
             </section>
 
             <!-- INFO CIRCLES -->
             <section class="flex-container">
-                <div class="flex-item"><img src="handmade.jpg" class="flex-img" alt="handmade cake"><h3>HANDMADE</h3></div>
-                <div class="flex-item"><img src="traditional.jpg" class="flex-img" alt="traditional cake"><h3>TRADITIONAL</h3></div>
-                <div class="flex-item"><img src="mellemfolk.jpg" class="flex-img" alt="mellemfolk caffe"><h3>LOCAL</h3></div>
+                <div class="flex-item"><img src="media/handmade.jpg" class="flex-img" alt="handmade cake">
+                    <h3>HANDMADE</h3>
+                </div>
+                <div class="flex-item"><img src="media/traditional.jpg" class="flex-img" alt="traditional cake">
+                    <h3>TRADITIONAL</h3>
+                </div>
+                <div class="flex-item"><img src="media/mellemfolk.jpg" class="flex-img" alt="mellemfolk caffe">
+                    <h3>LOCAL</h3>
+                </div>
             </section>
 
             <!-- SECOND IMG+TEXT SECTION -->
             <div class="links" id="product"></div>
             <section class="pic-txt right-section" id="product">
-                <img src="croppedcake.jpg" class="main_img" alt="chimney cake">
+                <img src="media/croppedcake.jpg" class="main_img" alt="chimney cake">
                 <div class="info-box">
                     <h3>Chimney Cake</h3><br>
-                    <p>Flóra will bake for you what she does best, and that's <strong>chimney cakes</strong>. A chimney cake is a special type of cake originally made in Hungary and its surrounding countries. It has a curious and unique shape for which it owns its name - chimney cake.<br><br> You can eat your chimney cake empty or filled with Nutella, ice cream, whipped cream, cinnamon... you get the idea :)</p>
+                    <p>Flóra will bake for you what she does best, and that's <strong>chimney cakes</strong>. A chimney
+                        cake is a special type of cake originally made in Hungary and its surrounding countries. It has
+                        a curious and unique shape for which it owns its name - chimney cake.<br><br> You can eat your
+                        chimney cake empty or filled with Nutella, ice cream, whipped cream, cinnamon... you get the
+                        idea :)</p>
                 </div>
             </section>
 
@@ -88,67 +114,71 @@
             <section class="gallery-section">
                 <div class="gallery-container">
                     <div class="gallery-image">
-                        <img id="myImg1" src="IMG_0622.jpg" alt="Chimney cake" style="height:100%;max-height:300px">
+                        <img id="myImg1" src="media/IMG_0622.jpg" alt="Chimney cake"
+                            style="height:100%;max-height:300px">
 
                         <!-- The Modal -->
                         <div id="myModal1" class="modal">
 
-                          <!-- The Close Button -->
-                          <span class="close1">&times;</span>
+                            <!-- The Close Button -->
+                            <span class="close1">&times;</span>
 
-                          <!-- Modal Content (The Image) -->
-                          <img class="modal-content" id="img01">
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
 
-                          <!-- Modal Caption (Image Text) -->
-                          <div id="caption1"></div>
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption1"></div>
                         </div>
                     </div>
                     <div class="gallery-image">
-                        <img id="myImg2" src="IMG_0623.jpg" alt="Chimney cake" style="height:100%;max-height:300px">
+                        <img id="myImg2" src="media/IMG_0623.jpg" alt="Chimney cake"
+                            style="height:100%;max-height:300px">
 
                         <!-- The Modal -->
                         <div id="myModal2" class="modal">
 
-                          <!-- The Close Button -->
-                          <span class="close2" id="close2">&times;</span>
+                            <!-- The Close Button -->
+                            <span class="close2" id="close2">&times;</span>
 
-                          <!-- Modal Content (The Image) -->
-                          <img class="modal-content" id="img02">
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img02">
 
-                          <!-- Modal Caption (Image Text) -->
-                          <div id="caption2"></div>
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption2"></div>
                         </div>
                     </div>
                     <div class="gallery-image">
-                        <img id="myImg3" src="IMG_0582.jpg" alt="Chimney cake" style="height:100%;max-height:300px">
+                        <img id="myImg3" src="media/IMG_0582.jpg" alt="Chimney cake"
+                            style="height:100%;max-height:300px">
 
                         <!-- The Modal -->
                         <div id="myModal3" class="modal">
 
-                          <!-- The Close Button -->
-                          <span class="close3" id="close3">&times;</span>
+                            <!-- The Close Button -->
+                            <span class="close3" id="close3">&times;</span>
 
-                          <!-- Modal Content (The Image) -->
-                          <img class="modal-content" id="img03">
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img03">
 
-                          <!-- Modal Caption (Image Text) -->
-                          <div id="caption3"></div>
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption3"></div>
                         </div>
                     </div>
                     <div class="gallery-image">
-                        <img id="myImg4" src="traditional.jpg" alt="Chimney cake" style="height:100%;max-height:300px">
+                        <img id="myImg4" src="media/traditional.jpg" alt="Chimney cake"
+                            style="height:100%;max-height:300px">
 
                         <!-- The Modal -->
                         <div id="myModal4" class="modal">
 
-                          <!-- The Close Button -->
-                          <span class="close4" id="close4">&times;</span>
+                            <!-- The Close Button -->
+                            <span class="close4" id="close4">&times;</span>
 
-                          <!-- Modal Content (The Image) -->
-                          <img class="modal-content" id="img04">
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img04">
 
-                          <!-- Modal Caption (Image Text) -->
-                          <div id="caption4"></div>
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption4"></div>
                         </div>
                     </div>
                 </div>
@@ -157,68 +187,51 @@
             <!-- REVIEWS -->
 
             <section class="flex-container">
-                <div class="flex-item"><img src="./lady1.jpg" class="flex-img" alt="first person"><br><h3>Monica</h3><i>Review</i><br><q>The best chimney cake ever!</q></div>
-                <div class="flex-item"><img src="./guy1.jpg" class="flex-img" alt="second person"><br><h3>David</h3><i>Review</i><br><q>My favourite cake in Aarhus</q></div>
-                <div class="flex-item"><img src="./lady2.jpg" class="flex-img" alt="third person"><br><h3>Sophie</h3><i>Review</i><br><q>I'll definitely come back!</q></div>
+                <div class="flex-item"><img src="media/lady1.jpg" class="flex-img" alt="first person"><br>
+                    <h3>Monica</h3><i>Review</i><br><q>The best chimney cake ever!</q>
+                </div>
+                <div class="flex-item"><img src="media/guy1.jpg" class="flex-img" alt="second person"><br>
+                    <h3>David</h3><i>Review</i><br><q>My favourite cake in Aarhus</q>
+                </div>
+                <div class="flex-item"><img src="media/lady2.jpg" class="flex-img" alt="third person"><br>
+                    <h3>Sophie</h3><i>Review</i><br><q>I'll definitely come back!</q>
+                </div>
             </section>
-
-
-
-            <section class="container_review">
-                <!-- review -->
-                <article class="review">
-                  <div class="img-container">
-                    <img src="" id="person-img" alt="" >
-                  </div>
-                  <h4 id="customer"></h4>
-                  <br>
-                  <i id="rev"></i>
-                  <br>
-                  <p id="review_text"></p>
-                  <!-- prev next buttons-->
-                  <div class="button-container">
-                    <button class="prev-btn">
-                        <i class="fas fa-chevron-left"></i>
-                      </button>
-                    <button class="next-btn">
-                      <i class="fas fa-chevron-right"></i>
-                    </button>
-                  </div>
-                </article>
-              </section>
-
 
 
 
             <!-- MAP & VIDEO -->
-            
+
             <div class="links" id="findus"></div>
             <section>
-            <h3 style="font-size: 23px; margin-left: 2em;">Where can I get my chimney cake?</h3>
-            <div class="container">
-                <br><p>You can find your chimney cake at Café MellemFolk, located in the heart of Aarhus.</p>
-                <div class="mapvid-container">
-                    <div class="mapvid-item map">
-                        <div id="map"></div>
-                    </div>
-                    <div class="mapvid-item video">
-                        <video controls>
-                            <source src="media/cc_elott.mp4" type="video/mp4">Your browser does not support playing videos.
-                        </video>
+                <h3 style="font-size: 23px; margin-left: 2em;">Where can I get my chimney cake?</h3>
+                <div class="container">
+                    <br>
+                    <p>You can find your chimney cake at Café MellemFolk, located in the heart of Aarhus.</p>
+                    <div class="mapvid-container">
+                        <div class="mapvid-item map">
+                            <div id="map"></div>
+                        </div>
+                        <div class="mapvid-item video">
+                            <video controls>
+                                <source src="http://cilis.dk/media/cc_elott.mp4" type="video/mp4">Your browser does not
+                                support playing
+                                videos.
+                            </video>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
 
         </div>
     </main>
-    
+
     <!-- FOOTER -->
     <footer class="footer" id="contact">
         <div clas="footer-left">
             <img class="logo2" src="media/logo.png" alt="logo">
         </div>
-        
+
         <div clas="footer-center">
             <ul class="contact-list">
                 <li>
@@ -235,24 +248,28 @@
                 </li>
             </ul>
         </div>
-        
+
         <div clas="footer-right">
             <h3>About the company</h3><br>
             <p>
-                We want to do what we do best, and that's <strong>chimney cakes</strong>. You can find us at Café MellemFolk, located in the heart of Aarhus. Come to MellemFolk and try your first chimney cake!
+                We want to do what we do best, and that's <strong>chimney cakes</strong>. You can find us at Café
+                MellemFolk, located in the heart of Aarhus. Come to MellemFolk and try your first chimney cake!
             </p>
             <div class="footer-icons">
-                <a href="https://www.facebook.com/Cilis-103290887958792"><img src="media/facebooklogo.png" alt="Facebook logo" class="some_image"></a>
-                <a href="https://www.instagram.com/cilis53/"><img src="media/instalogo.png" alt="Instagram logo" class="some_image"></a>
+                <a href="https://www.facebook.com/Cilis-103290887958792"><img src="media/facebooklogo.png"
+                        alt="Facebook logo" class="some_image"></a>
+                <a href="https://www.instagram.com/cilis53/"><img src="media/instalogo.png" alt="Instagram logo"
+                        class="some_image"></a>
                 <a href="#"><img src="media/ytlogo.png" alt="Youtube logo" class="some_image"></a>
             </div>
         </div>
-    
+
     </footer>
-    
-    <script src="js.js"></script>
+
+    <script src="js/js.js"></script>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoidHdlbnl0d2VsdmUiLCJhIjoiY2tucmJqMHM1MGU5aTJ2bzc4c2Jmc2t1OSJ9.TBYAURDvqarW56GRuP6xpg';
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoidHdlbnl0d2VsdmUiLCJhIjoiY2tucmJqMHM1MGU5aTJ2bzc4c2Jmc2t1OSJ9.TBYAURDvqarW56GRuP6xpg';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/twenytwelve/ckr6tfb2l116t18t2rx16oz8k',
@@ -271,20 +288,18 @@
                     map.addSource('points', {
                         'type': 'geojson',
                         'data': {
-                                'type': 'FeatureCollection',
-                                'features': [
-                                {
-                                    // feature for MellemFolk
-                                    'type': 'Feature',
-                                    'geometry': {
+                            'type': 'FeatureCollection',
+                            'features': [{
+                                // feature for MellemFolk
+                                'type': 'Feature',
+                                'geometry': {
                                     'type': 'Point',
-                                    'coordinates': [10.2128655, 56.15996,10.213]
-                                    },
-                                    'properties': {
-                                        'title': 'MellemFolk'
-                                    }
+                                    'coordinates': [10.2128655, 56.15996, 10.213]
+                                },
+                                'properties': {
+                                    'title': 'MellemFolk'
                                 }
-                            ]
+                            }]
                         }
                     });
 
@@ -298,7 +313,7 @@
                             // get the title name from the source's "title" property
                             'text-field': ['get', 'title'],
                             'text-font': [
-                            'Open Sans Semibold'
+                                'Open Sans Semibold'
                             ],
                             'text-offset': [0, 0.5],
                             'text-anchor': 'top'
@@ -307,5 +322,7 @@
                 }
             );
         });
-</script>
-</body></html>
+    </script>
+</body>
+
+</html>
